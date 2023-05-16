@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Aastha!</title>
+  <style>
+    body {
+      background: linear-gradient(45deg, #ff00ff, #00ffff);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    @keyframes gradientAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    
+    #container {
+      text-align: center;
+      margin-top: 200px;
+    }
+    
+    h1 {
+      color: #ff0066;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      animation: textAnimation 2s ease infinite;
+    }
+    
+    @keyframes textAnimation {
+      0% {transform: scale(1);}
+      50% {transform: scale(1.2);}
+      100% {transform: scale(1);}
+    }
+    
+    p {
+      color: #333;
+      font-size: 24px;
+      margin-top: 20px;
+      animation: textShadowAnimation 3s ease infinite;
+    }
+    
+    @keyframes textShadowAnimation {
+      0% {text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+      50% {text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.5);}
+      100% {text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+    }
+    
+    button {
+      background-color: #ff0066;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      font-size: 20px;
+      margin-top: 40px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      animation: buttonAnimation 4s ease infinite;
+    }
+    
+    @keyframes buttonAnimation {
+      0% {transform: translateY(0);}
+      25% {transform: translateY(-10px);}
+      50% {transform: translateY(0);}
+      75% {transform: translateY(10px);}
+      100% {transform: translateY(0);}
+    }
+    
+    button:hover {
+      background-color: #ff0033;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Happy Birthday Aastha!</h1>
+    <p>Wishing you a day filled with love, joy, and laughter!</p>
+    <button onclick="playMusic()">Play Birthday Song</button>
+    <audio id="birthdaySong" src="birthday_song.mp3"></audio>
+  </div>
+
+  <script>
+    function playMusic() {
+      var audio = document.getElementById("birthdaySong");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
